@@ -53,7 +53,7 @@ class ClipboardTyper(Tk):
     def __on_button_press(self):
         Utils.type_from_clipboard(
             isTypeRacer=self.__cbIsTypeRacerVar.get(),
-            leaveLastChar=self.__cbLeaveLastChar,
+            leaveLastChar=self.__cbLeaveLastChar.get(),
             typingDelay=self.__typing_delay_scale.get(),
             startDelay=self.__start_delay_scale.get())
 
